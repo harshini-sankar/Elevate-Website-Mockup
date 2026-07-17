@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Elevate Business Community — From Solo Operator to CEO</title>
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -33,7 +33,7 @@
           <li><a href="events.html#diagnostic-calls">Business Diagnostic Coaching Calls</a></li>
         </ul>
       </li>
-      <li class="nav-right"><a href="login.html" class="btn btn-outline">Log In</a></li>
+      <li class="nav-right"><a href="login.html" class="btn btn-nav">Log In</a></li>
     </ul>
     <button class="mobile-toggle" aria-label="Toggle menu">☰</button>
   </nav>
@@ -52,78 +52,19 @@
   </div>
 </section>
 
-<!-- WEEKLY FOCUS (carousel, screenshot-1 inspired) -->
-<section class="section-depth reveal">
+<!-- WEEKLY FOCUS (now newsletter signup) -->
+<section class="section-mist reveal">
   <div class="wrap">
-    <div class="section-head tight">
+    <div class="section-head tight" style="margin-bottom:0;">
       <p class="eyebrow">This Week</p>
       <h2>Weekly Focus</h2>
-      <p class="lede-short">Bite-sized moves you can make this week, sorted by pillar.</p>
+      <p class="lede-short">One short email, every week — this week's focus delivered straight to your inbox, before you even log in.</p>
     </div>
-
-    <div class="pill-row" data-pill-group="weekly">
-      <button class="pill active" data-filter="all">All</button>
-      <button class="pill" data-filter="mindset">Mindset</button>
-      <button class="pill" data-filter="revenue">Revenue</button>
-      <button class="pill" data-filter="systems">Systems</button>
-    </div>
-
-    <div class="carousel-shell" data-carousel>
-      <div class="carousel-track">
-        <div class="media-card" data-belongs-to="weekly" data-category="mindset">
-          <div class="media-thumb"><span class="media-badge">8 MIN</span><span>Video Placeholder</span></div>
-          <div class="media-body">
-            <p class="media-eyebrow">Mindset</p>
-            <h3 class="media-title">Reclaim Your Runway</h3>
-            <div class="media-person"><span class="avatar-dot">E</span><span class="p-name">With an Elevate Coach</span></div>
-          </div>
-        </div>
-        <div class="media-card" data-belongs-to="weekly" data-category="mindset">
-          <div class="media-thumb"><span class="media-badge">6 MIN</span><span>Video Placeholder</span></div>
-          <div class="media-body">
-            <p class="media-eyebrow">Mindset</p>
-            <h3 class="media-title">The CEO Reframe</h3>
-            <div class="media-person"><span class="avatar-dot">E</span><span class="p-name">With an Elevate Coach</span></div>
-          </div>
-        </div>
-        <div class="media-card" data-belongs-to="weekly" data-category="revenue">
-          <div class="media-thumb"><span class="media-badge">11 MIN</span><span>Video Placeholder</span></div>
-          <div class="media-body">
-            <p class="media-eyebrow">Revenue</p>
-            <h3 class="media-title">The 20-Minute Pitch Fix</h3>
-            <div class="media-person"><span class="avatar-dot">E</span><span class="p-name">With an Elevate Coach</span></div>
-          </div>
-        </div>
-        <div class="media-card" data-belongs-to="weekly" data-category="revenue">
-          <div class="media-thumb"><span class="media-badge">9 MIN</span><span>Video Placeholder</span></div>
-          <div class="media-body">
-            <p class="media-eyebrow">Revenue</p>
-            <h3 class="media-title">Kill Your Vanity Metrics</h3>
-            <div class="media-person"><span class="avatar-dot">E</span><span class="p-name">With an Elevate Coach</span></div>
-          </div>
-        </div>
-        <div class="media-card" data-belongs-to="weekly" data-category="systems">
-          <div class="media-thumb"><span class="media-badge">14 MIN</span><span>Video Placeholder</span></div>
-          <div class="media-body">
-            <p class="media-eyebrow">Systems</p>
-            <h3 class="media-title">SOPs in a Single Sitting</h3>
-            <div class="media-person"><span class="avatar-dot">E</span><span class="p-name">With an Elevate Coach</span></div>
-          </div>
-        </div>
-        <div class="media-card" data-belongs-to="weekly" data-category="systems">
-          <div class="media-thumb"><span class="media-badge">7 MIN</span><span>Video Placeholder</span></div>
-          <div class="media-body">
-            <p class="media-eyebrow">Systems</p>
-            <h3 class="media-title">Automate the Follow-Up</h3>
-            <div class="media-person"><span class="avatar-dot">E</span><span class="p-name">With an Elevate Coach</span></div>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-nav">
-        <button class="car-btn car-prev" aria-label="Scroll left">←</button>
-        <button class="car-btn car-next" aria-label="Scroll right">→</button>
-      </div>
-    </div>
+    <form class="newsletter-form" style="margin-top:34px; max-width:560px; justify-content:flex-start;" onsubmit="return false;">
+      <input type="email" placeholder="you@business.com" required aria-label="Email address">
+      <button type="submit" class="btn btn-gold">Get Weekly Focus</button>
+    </form>
+    <p class="newsletter-note" style="margin-top:14px;">Unsubscribe anytime.</p>
   </div>
 </section>
 
@@ -153,10 +94,10 @@
 </section>
 
 <!-- EVENT MOSAIC -->
-<section class="section-depth reveal">
+<section class="section-inky reveal">
   <div class="wrap">
     <div class="section-head tight">
-      <p class="eyebrow">The Live Events Ecosystem</p>
+      <p class="eyebrow">Live Events</p>
       <h2>Four rooms. One trajectory.</h2>
     </div>
 
@@ -194,7 +135,7 @@
 </section>
 
 <!-- MONTHLY PILLAR CAROUSEL (screenshot-3 inspired) -->
-<section class="section-mist reveal">
+<section class="section-dark reveal">
   <div class="wrap">
     <div class="section-head tight">
       <p class="eyebrow">The Curriculum, By Month</p>
@@ -204,19 +145,19 @@
 
     <div class="pill-row" data-pill-group="pillars">
       <button class="pill active" data-filter="all">All</button>
-      <button class="pill" data-filter="p1">01 Mindset</button>
+      <button class="pill" data-filter="p1">01 Professional Dev.</button>
       <button class="pill" data-filter="p2">02 Product</button>
       <button class="pill" data-filter="p3">03 Marketing</button>
       <button class="pill" data-filter="p4">04 Operations</button>
       <button class="pill" data-filter="p5">05 Financial</button>
-      <button class="pill" data-filter="p6">06 Compliance</button>
+      <button class="pill" data-filter="p6">06 Legal &amp; Compliance</button>
     </div>
 
     <div class="carousel-shell" data-carousel>
       <div class="carousel-track">
         <div class="media-card" data-belongs-to="pillars" data-category="p1">
           <div class="media-thumb"><span class="media-badge">Masterclass</span><span>Session Placeholder</span></div>
-          <div class="media-body"><p class="media-eyebrow">01 · Mindset &amp; Psychology</p><h3 class="media-title">From Employee to Operator</h3><div class="media-person"><span class="avatar-dot">E</span><span class="p-name">With an Elevate Expert</span></div></div>
+          <div class="media-body"><p class="media-eyebrow">01 · Professional Development</p><h3 class="media-title">From Employee to Operator</h3><div class="media-person"><span class="avatar-dot">E</span><span class="p-name">With an Elevate Expert</span></div></div>
         </div>
         <div class="media-card" data-belongs-to="pillars" data-category="p2">
           <div class="media-thumb"><span class="media-badge">Masterclass</span><span>Session Placeholder</span></div>
@@ -236,45 +177,7 @@
         </div>
         <div class="media-card" data-belongs-to="pillars" data-category="p6">
           <div class="media-thumb"><span class="media-badge">Masterclass</span><span>Session Placeholder</span></div>
-          <div class="media-body"><p class="media-eyebrow">06 · Foundation &amp; Compliance</p><h3 class="media-title">LLC, EIN, Locked In</h3><div class="media-person"><span class="avatar-dot">E</span><span class="p-name">With an Elevate Expert</span></div></div>
-        </div>
-      </div>
-      <div class="carousel-nav">
-        <button class="car-btn car-prev" aria-label="Scroll left">←</button>
-        <button class="car-btn car-next" aria-label="Scroll right">→</button>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- TESTIMONIALS -->
-<section class="section-dark reveal">
-  <div class="wrap">
-    <div class="section-head tight">
-      <p class="eyebrow">In Their Words</p>
-      <h2>What the room does.</h2>
-    </div>
-    <div class="carousel-shell" data-carousel>
-      <div class="carousel-track">
-        <div class="testi-card">
-          <span class="testi-mark">"</span>
-          <p class="quote">I stopped guessing and started building. One diagnostic call gave me more clarity than a year of courses.</p>
-          <div class="testi-person"><span class="avatar-dot">R</span><div><div class="p-name">Rise Member</div><div class="p-role">Wellness Coach</div></div></div>
-        </div>
-        <div class="testi-card">
-          <span class="testi-mark">"</span>
-          <p class="quote">Core gave my team a real system. We finally stopped rebuilding the wheel every month.</p>
-          <div class="testi-person"><span class="avatar-dot">C</span><div><div class="p-name">Core Member</div><div class="p-role">Agency Owner</div></div></div>
-        </div>
-        <div class="testi-card">
-          <span class="testi-mark">"</span>
-          <p class="quote">Pitch + Play made me test an offer live instead of overthinking it for months. It sold that week.</p>
-          <div class="testi-person"><span class="avatar-dot">R</span><div><div class="p-name">Rise Member</div><div class="p-role">Product Founder</div></div></div>
-        </div>
-        <div class="testi-card">
-          <span class="testi-mark">"</span>
-          <p class="quote">Ascend is a different room entirely. The conversations there are about legacy, not hustle.</p>
-          <div class="testi-person"><span class="avatar-dot">A</span><div><div class="p-name">Ascend Member</div><div class="p-role">Multi-Business Owner</div></div></div>
+          <div class="media-body"><p class="media-eyebrow">06 · Legal &amp; Compliance</p><h3 class="media-title">LLC, EIN, Locked In</h3><div class="media-person"><span class="avatar-dot">E</span><span class="p-name">With an Elevate Expert</span></div></div>
         </div>
       </div>
       <div class="carousel-nav">
@@ -286,7 +189,7 @@
 </section>
 
 <!-- TIERS SNAPSHOT -->
-<section class="section-depth reveal">
+<section class="section-mist reveal">
   <div class="wrap">
     <div class="section-head tight">
       <p class="eyebrow">Membership</p>
@@ -297,47 +200,25 @@
       <div class="tier-card">
         <span class="tier-num">Tier 01</span>
         <h3>Rise</h3>
-        <p class="tier-price">$147<small>/mo</small></p>
-        <p class="tier-desc">Early-stage validation and fundamentals. Fast, focused, built for momentum.</p>
+        <p class="tier-price", style="color:var(--electrum)">$147<small>/mo</small></p>
+        <p class="tier-desc", style="color: var(--mist);">Early-stage validation and fundamentals. Fast, focused, built for momentum.</p>
         <a href="offer.html#pricing" class="btn btn-outline">View Details</a>
       </div>
       <div class="tier-card featured">
         <span class="tier-num">Tier 02</span>
         <h3>Core</h3>
-        <p class="tier-price">$497<small>/mo</small></p>
-        <p class="tier-desc">Structured foundations, financial scorecards, systems that scale.</p>
+        <p class="tier-price", style="color:var(--electrum);">$497<small>/mo</small></p>
+        <p class="tier-desc", style="color: var(--mist);">Structured foundations, financial scorecards, systems that scale.</p>
         <a href="offer.html#pricing" class="btn btn-gold">View Details</a>
       </div>
       <div class="tier-card">
         <span class="tier-num">Tier 03</span>
         <h3>Ascend</h3>
-        <p class="tier-price" style="font-size:1.3rem;">Application Only</p>
-        <p class="tier-desc">The network for legacy, exits, and what endures.</p>
-        <a href="offer.html#pricing" class="btn btn-outline">View Details</a>
+        <p class="tier-price" style="font-size:1.3rem; color:var(--electrum);"">Application Only</p>
+        <p class="tier-desc", style="color: var(--mist);">The network for legacy, exits, and what endures.</p>
+        <a href="offer.html#pricing" class="btn btn-outline">Join the Waitlist</a>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- QUOTE -->
-<section class="quote-band reveal">
-  <div class="wrap">
-    <span class="quote-script">"Legacies are built in silence, not on stage."</span>
-    <p class="attribution">— Kirsten Franklin, Founder</p>
-  </div>
-</section>
-
-<!-- NEWSLETTER -->
-<section class="newsletter reveal">
-  <div class="wrap newsletter-inner">
-    <p class="eyebrow">Stay in the Loop</p>
-    <h2 style="margin-top:14px; font-size:1.9rem;">One email. Every month's focus.</h2>
-    <p class="lede-short" style="margin:14px auto 0;">The pillar of the month, one weekly focus, and first access to free event seats — no noise.</p>
-    <form class="newsletter-form" onsubmit="return false;">
-      <input type="email" placeholder="you@business.com" required aria-label="Email address">
-      <button type="submit" class="btn btn-gold">Subscribe</button>
-    </form>
-    <p class="newsletter-note">Unsubscribe anytime. We respect the inbox as much as the runway.</p>
   </div>
 </section>
 
@@ -393,6 +274,6 @@
   </div>
 </footer>
 
-<script src="js/main.js"></script>
+<script src="main.js"></script>
 </body>
 </html>

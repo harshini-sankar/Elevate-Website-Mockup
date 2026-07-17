@@ -1,10 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Events — Elevate Business Community</title>
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="style.css">
 <style>
   .event-block{padding:90px 0; border-bottom:1px solid rgba(143,173,197,0.12);}
   .event-block:last-of-type{border-bottom:none;}
@@ -13,16 +14,10 @@
   .checklist li{font-size:0.88rem; padding-left:22px; position:relative;}
   .checklist li::before{content:'✓'; position:absolute; left:0; color:var(--electrum); font-weight:700;}
   @media(max-width:700px){.checklist{grid-template-columns:1fr;}}
-  .countdown-bar{display:flex; gap:18px; justify-content:center; margin-top:40px; flex-wrap:wrap;}
-  .countdown-unit{background:var(--navy-depth); border:1px solid rgba(231,203,156,0.3); padding:22px 30px; text-align:center; min-width:100px;}
-  .countdown-unit .cd-num{font-family:var(--font-display); font-size:2.1rem; color:var(--electrum);}
-  .countdown-unit .cd-label{font-family:var(--font-sub); font-size:0.65rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--chambray-mist); margin-top:6px;}
-  .event-gallery-head{display:flex; align-items:baseline; justify-content:space-between; margin-top:50px; flex-wrap:wrap; gap:10px;}
-  .event-gallery-head p{font-family:var(--font-sub); font-size:0.7rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--electrum);}
 </style>
 </head>
 <body>
-
+ 
 <header>
   <nav>
     <a href="index.html" class="logo">ELEVATE</a>
@@ -48,49 +43,62 @@
           <li><a href="events.html#diagnostic-calls">Business Diagnostic Coaching Calls</a></li>
         </ul>
       </li>
-      <li class="nav-right"><a href="login.html" class="btn btn-outline">Log In</a></li>
+      <li class="nav-right"><a href="login.html" class="btn btn-nav">Log In</a></li>
     </ul>
     <button class="mobile-toggle" aria-label="Toggle menu">☰</button>
   </nav>
 </header>
-
+ 
 <div class="page-header">
   <div class="wrap">
     <p class="crumb"><a href="index.html">Home</a> / Events</p>
     <p class="eyebrow">Events</p>
-    <h1>Implementation, not information.</h1>
-    <p>Real implementation, expert feedback, business momentum — matched to your stage.</p>
+    <h1>Walk into the room first.</h1>
+    <p>Real implementation, expert feedback, business momentum — see it before you commit.</p>
     <div class="hero-cta" style="margin-top:34px;">
-      <a href="#pitch-play" class="btn btn-gold">Try One Free</a>
+      <a href="#pitch-play" class="btn btn-gold">Try an Event, On Us</a>
       <a href="offer.html#pricing" class="btn btn-outline">Get Full Access</a>
     </div>
   </div>
 </div>
-
-<!-- COUNTDOWN / CALENDAR TEASER -->
-<section class="section-depth reveal" style="padding:80px 0;">
-  <div class="wrap" style="text-align:center;">
-    <p class="eyebrow">July · Pillar 04</p>
-    <h2 style="font-size:1.8rem;">Operations &amp; Delivery</h2>
-    <p style="max-width:520px; margin:14px auto 0; color:var(--chambray-mist);">This month's Masterclass, Pitch + Play, and Diagnostic Call all build toward one theme: systems your team can run without you.</p>
-    <div class="countdown-bar" id="countdown">
-      <div class="countdown-unit"><div class="cd-num" id="cd-days">--</div><div class="cd-label">Days</div></div>
-      <div class="countdown-unit"><div class="cd-num" id="cd-hours">--</div><div class="cd-label">Hours</div></div>
-      <div class="countdown-unit"><div class="cd-num" id="cd-mins">--</div><div class="cd-label">Minutes</div></div>
-      <div class="countdown-unit"><div class="cd-num" id="cd-secs">--</div><div class="cd-label">Seconds</div></div>
+ 
+<!-- HIGHLIGHT REEL -->
+<section class="section-mist reveal">
+  <div class="wrap">
+    <div class="section-head tight">
+      <p class="eyebrow">From the Room</p>
+      <h2>Recent Highlights</h2>
+      <p class="lede-short">A quick look at what happens inside — replays, reactions, and real sessions.</p>
     </div>
-    <p style="margin-top:16px; font-size:0.78rem; color:var(--chambray-mist); letter-spacing:0.05em;">Until the next live Masterclass</p>
+    <div class="media-grid">
+      <div class="media-card">
+        <div class="media-thumb"><span class="media-badge">Masterclass</span><span>Session Placeholder</span></div>
+        <div class="media-body"><p class="media-eyebrow">Master Classes</p><h3 class="media-title", style="color:white">Live From the Main Stage</h3><div class="media-person"><span class="avatar-dot">E</span><span class="p-name">With an Elevate Expert</span></div></div>
+      </div>
+      <div class="media-card">
+        <div class="media-thumb"><span class="media-badge">Pitch + Play</span><span>Session Placeholder</span></div>
+        <div class="media-body"><p class="media-eyebrow">Pitch + Play</p><h3 class="media-title", style="color:white">Sold It Before I Finished the Pitch</h3><div class="media-person"><span class="avatar-dot">R</span><span class="p-name">Rise Member</span></div></div>
+      </div>
+      <div class="media-card">
+        <div class="media-thumb"><span class="media-badge">Masterclass</span><span>Session Placeholder</span></div>
+        <div class="media-body"><p class="media-eyebrow">Diagnostic Calls</p><h3 class="media-title", style="color:white">One Hot Seat, One Breakthrough</h3><div class="media-person"><span class="avatar-dot">C</span><span class="p-name">Core Member</span></div></div>
+      </div>
+      <div class="media-card">
+        <div class="media-thumb"><span class="media-badge">MVP Coaching</span><span>Session Placeholder</span></div>
+        <div class="media-body"><p class="media-eyebrow">MVP Coaching</p><h3 class="media-title", style="color:white">Naming the Bottleneck</h3><div class="media-person"><span class="avatar-dot">E</span><span class="p-name">With an Elevate Expert</span></div></div>
+      </div>
+    </div>
   </div>
 </section>
-
+ 
 <!-- PITCH + PLAY -->
-<section id="pitch-play" class="event-block section-dark reveal">
+<section id="pitch-play" class="event-block section-inky reveal">
   <div class="wrap two-col">
     <div>
       <span class="event-tag">Monthly Event</span>
       <h2>Pitch + Play</h2>
       <p style="margin-top:18px;">Learn to talk about your business in a way that makes people pay attention — and test it live, in the room.</p>
-      <p class="section-sub" style="margin-top:22px; color:var(--electrum); font-size:0.78rem; letter-spacing:0.08em; text-transform:uppercase;">What You Practice</p>
+      <span class="eyebrow-label">What You Practice</span>
       <ul class="checklist">
         <li>Pitching yourself</li>
         <li>Refining your messaging</li>
@@ -100,44 +108,17 @@
     </div>
     <div class="art-block"><span>Pitch + Play<br>Live Session<br>Placeholder</span></div>
   </div>
-
-  <div class="wrap">
-    <div class="event-gallery-head"><p>Gallery &amp; Voices</p></div>
-    <div class="carousel-shell" data-carousel>
-      <div class="gallery-track">
-        <div class="gallery-item"><div class="g-cap">Live Pitch Round · Placeholder</div></div>
-        <div class="gallery-item quote-item">
-          <div>
-            <p class="quote">Sold my offer to the room before I even finished the pitch.</p>
-            <p class="attribution">— Rise Member</p>
-          </div>
-        </div>
-        <div class="gallery-item"><div class="g-cap">Founder Feedback Circle · Placeholder</div></div>
-        <div class="gallery-item"><div class="g-cap">Collaboration Table · Placeholder</div></div>
-        <div class="gallery-item quote-item">
-          <div>
-            <p class="quote">Found my first affiliate partner in the room, no cold outreach needed.</p>
-            <p class="attribution">— Core Member</p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-nav">
-        <button class="car-btn car-prev" aria-label="Scroll left">←</button>
-        <button class="car-btn car-next" aria-label="Scroll right">→</button>
-      </div>
-    </div>
-  </div>
 </section>
-
+ 
 <!-- MVP COACHING -->
-<section id="mvp-coaching" class="event-block section-depth reveal">
+<section id="mvp-coaching" class="event-block section-dark reveal">
   <div class="wrap two-col reverse">
     <div class="art-block"><span>MVP Coaching<br>Live Session<br>Placeholder</span></div>
     <div>
       <span class="event-tag">Monthly Event</span>
       <h2>MVP Coaching</h2>
       <p style="margin-top:18px;">Live coaching on the exact things keeping you stuck — mindset, vibration, and business, meeting you where you are.</p>
-      <p class="section-sub" style="margin-top:22px; color:var(--electrum); font-size:0.78rem; letter-spacing:0.08em; text-transform:uppercase;">What Gets Uncovered</p>
+      <span class="eyebrow-label">What Gets Uncovered</span>
       <ul class="checklist">
         <li>Blind spots</li>
         <li>Bottlenecks</li>
@@ -146,37 +127,16 @@
       </ul>
     </div>
   </div>
-
-  <div class="wrap">
-    <div class="event-gallery-head"><p>Gallery &amp; Voices</p></div>
-    <div class="carousel-shell" data-carousel>
-      <div class="gallery-track">
-        <div class="gallery-item"><div class="g-cap">Coaching Circle · Placeholder</div></div>
-        <div class="gallery-item quote-item">
-          <div>
-            <p class="quote">Named the bottleneck I'd been avoiding for a year. Fixed it in a month.</p>
-            <p class="attribution">— Rise Member</p>
-          </div>
-        </div>
-        <div class="gallery-item"><div class="g-cap">One-on-One Moment · Placeholder</div></div>
-        <div class="gallery-item"><div class="g-cap">Group Reflection · Placeholder</div></div>
-      </div>
-      <div class="carousel-nav">
-        <button class="car-btn car-prev" aria-label="Scroll left">←</button>
-        <button class="car-btn car-next" aria-label="Scroll right">→</button>
-      </div>
-    </div>
-  </div>
 </section>
-
+ 
 <!-- MASTER CLASSES -->
-<section id="master-classes" class="event-block section-dark reveal">
+<section id="master-classes" class="event-block section-inky reveal">
   <div class="wrap two-col">
     <div>
       <span class="event-tag">Monthly Event</span>
       <h2>Master Classes</h2>
       <p style="margin-top:18px;">One of the six pillars, taught deep, by people who've actually done it — not recycled internet advice.</p>
-      <p class="section-sub" style="margin-top:22px; color:var(--electrum); font-size:0.78rem; letter-spacing:0.08em; text-transform:uppercase;">What You Get</p>
+      <span class="eyebrow-label">What You Get</span>
       <ul class="checklist">
         <li>Tactical frameworks</li>
         <li>Live implementation guidance</li>
@@ -186,38 +146,17 @@
     </div>
     <div class="art-block"><span>Master Class<br>Live Session<br>Placeholder</span></div>
   </div>
-
-  <div class="wrap">
-    <div class="event-gallery-head"><p>Gallery &amp; Voices</p></div>
-    <div class="carousel-shell" data-carousel>
-      <div class="gallery-track">
-        <div class="gallery-item"><div class="g-cap">Main Stage · Placeholder</div></div>
-        <div class="gallery-item"><div class="g-cap">Workshop Table · Placeholder</div></div>
-        <div class="gallery-item quote-item">
-          <div>
-            <p class="quote">Every session has a purpose. I leave with something I actually use that week.</p>
-            <p class="attribution">— Core Member</p>
-          </div>
-        </div>
-        <div class="gallery-item"><div class="g-cap">Q&amp;A Pop-Up · Placeholder</div></div>
-      </div>
-      <div class="carousel-nav">
-        <button class="car-btn car-prev" aria-label="Scroll left">←</button>
-        <button class="car-btn car-next" aria-label="Scroll right">→</button>
-      </div>
-    </div>
-  </div>
 </section>
-
+ 
 <!-- DIAGNOSTIC CALLS -->
-<section id="diagnostic-calls" class="event-block section-depth reveal">
+<section id="diagnostic-calls" class="event-block section-mist reveal">
   <div class="wrap two-col reverse">
     <div class="art-block"><span>Diagnostic Coaching<br>Live Session<br>Placeholder</span></div>
     <div>
       <span class="event-tag">Monthly Event · Core &amp; Above</span>
       <h2>Business Diagnostic Coaching Calls</h2>
-      <p style="margin-top:18px;">One member, one hot seat — a structured diagnosis by people who can see what you can't.</p>
-      <p class="section-sub" style="margin-top:22px; color:var(--electrum); font-size:0.78rem; letter-spacing:0.08em; text-transform:uppercase;">In the Hot Seat</p>
+      <p style="margin-top:18px;">One member, one hot seat — a structured diagnosis by people who can see what you can't. New members can also join their first hot seat free.</p>
+      <span class="eyebrow-label">In the Hot Seat</span>
       <ul class="checklist">
         <li>Full operations review</li>
         <li>Real-time weak-point ID</li>
@@ -226,28 +165,8 @@
       </ul>
     </div>
   </div>
-
-  <div class="wrap">
-    <div class="event-gallery-head"><p>Gallery &amp; Voices</p></div>
-    <div class="carousel-shell" data-carousel>
-      <div class="gallery-track">
-        <div class="gallery-item"><div class="g-cap">The Hot Seat · Placeholder</div></div>
-        <div class="gallery-item quote-item">
-          <div>
-            <p class="quote">One diagnostic call gave me more clarity than a year of courses.</p>
-            <p class="attribution">— Rise Member</p>
-          </div>
-        </div>
-        <div class="gallery-item"><div class="g-cap">Expert Panel · Placeholder</div></div>
-      </div>
-      <div class="carousel-nav">
-        <button class="car-btn car-prev" aria-label="Scroll left">←</button>
-        <button class="car-btn car-next" aria-label="Scroll right">→</button>
-      </div>
-    </div>
-  </div>
 </section>
-
+ 
 <section class="cta-band reveal">
   <div class="wrap">
     <p class="eyebrow">Curious? Attend One On Us.</p>
@@ -258,7 +177,56 @@
     </div>
   </div>
 </section>
-
+ 
+<!-- EXPERTS -->
+<section class="section-inky reveal">
+  <div class="wrap">
+    <div class="section-head tight">
+      <p class="eyebrow">Who's In the Room</p>
+      <h2>Meet a Few of Our Experts</h2>
+      <p class="lede-short">Hover a photo for a quick introduction.</p>
+    </div>
+    <div class="experts-grid">
+      <div class="expert-item">
+        <div class="expert-avatar" tabindex="0">P.D.</div>
+        <div class="expert-name">Expert Name</div>
+        <div class="expert-role">Professional Development Coach</div>
+        <div class="expert-card">
+          <div class="ec-avatar">P.D.</div>
+          <p>Bio placeholder — background, credentials, and focus area for this expert will go here.</p>
+        </div>
+      </div>
+      <div class="expert-item">
+        <div class="expert-avatar" tabindex="0">M.S.</div>
+        <div class="expert-name">Expert Name</div>
+        <div class="expert-role">Marketing &amp; Sales Strategist</div>
+        <div class="expert-card">
+          <div class="ec-avatar">M.S.</div>
+          <p>Bio placeholder — background, credentials, and focus area for this expert will go here.</p>
+        </div>
+      </div>
+      <div class="expert-item">
+        <div class="expert-avatar" tabindex="0">F.M.</div>
+        <div class="expert-name">Expert Name</div>
+        <div class="expert-role">Financial Management Advisor</div>
+        <div class="expert-card">
+          <div class="ec-avatar">F.M.</div>
+          <p>Bio placeholder — background, credentials, and focus area for this expert will go here.</p>
+        </div>
+      </div>
+      <div class="expert-item">
+        <div class="expert-avatar" tabindex="0">L.C.</div>
+        <div class="expert-name">Expert Name</div>
+        <div class="expert-role">Legal &amp; Compliance Counsel</div>
+        <div class="expert-card">
+          <div class="ec-avatar">L.C.</div>
+          <p>Bio placeholder — background, credentials, and focus area for this expert will go here.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
 <footer>
   <div class="wrap">
     <div class="footer-grid">
@@ -298,32 +266,8 @@
     </div>
   </div>
 </footer>
-
-<script src="js/main.js"></script>
-<script>
-  (function(){
-    function nextEventDate(){
-      var now = new Date();
-      return new Date(now.getFullYear(), now.getMonth()+1, 1, 17, 0, 0);
-    }
-    function tick(){
-      var diff = nextEventDate() - new Date();
-      if(diff < 0) diff = 0;
-      var d = Math.floor(diff/(1000*60*60*24));
-      var h = Math.floor((diff/(1000*60*60))%24);
-      var m = Math.floor((diff/(1000*60))%60);
-      var s = Math.floor((diff/1000)%60);
-      var dayEl=document.getElementById('cd-days');
-      if(dayEl){
-        dayEl.textContent=d;
-        document.getElementById('cd-hours').textContent=h;
-        document.getElementById('cd-mins').textContent=m;
-        document.getElementById('cd-secs').textContent=s;
-      }
-    }
-    tick();
-    setInterval(tick, 1000);
-  })();
-</script>
+ 
+<script src="main.js"></script>
 </body>
 </html>
+ 

@@ -1,17 +1,13 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>What We Offer — Elevate Business Community</title>
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="style.css">
 <style>
-  .curric-table{width:100%; border-collapse:collapse; margin-top:20px;}
-  .curric-table th, .curric-table td{border:1px solid rgba(143,173,197,0.25); padding:18px 16px; text-align:left; vertical-align:top; font-size:0.84rem;}
-  .curric-table th{font-family:var(--font-sub); font-weight:600; letter-spacing:0.06em; text-transform:uppercase; font-size:0.7rem; color:var(--electrum); background:var(--navy-depth);}
-  .curric-table td.pillar-name{font-family:var(--font-sub); font-weight:600; color:var(--mist); white-space:nowrap;}
-  .curric-table tr:nth-child(even) td{background:rgba(143,173,197,0.04);}
-  .table-scroll{overflow-x:auto;}
   .mini-testi{display:grid; grid-template-columns:repeat(3,1fr); gap:24px; margin-top:36px;}
   .mini-testi-card{background:var(--inky-blue); border-top:2px solid var(--electrum); padding:26px 24px;}
   .mini-testi-card p.quote{font-size:12.5pt;}
@@ -20,7 +16,7 @@
 </style>
 </head>
 <body>
-
+ 
 <header>
   <nav>
     <a href="index.html" class="logo">ELEVATE</a>
@@ -46,106 +42,91 @@
           <li><a href="events.html#diagnostic-calls">Business Diagnostic Coaching Calls</a></li>
         </ul>
       </li>
-      <li class="nav-right"><a href="login.html" class="btn btn-outline">Log In</a></li>
+      <li class="nav-right"><a href="login.html" class="btn btn-nav">Log In</a></li>
     </ul>
     <button class="mobile-toggle" aria-label="Toggle menu">☰</button>
   </nav>
 </header>
-
+ 
 <div class="page-header">
   <div class="wrap">
     <p class="crumb"><a href="index.html">Home</a> / What We Offer</p>
     <p class="eyebrow">What We Offer</p>
-    <h1>One pillar a month. Focused, actionable work.</h1>
-    <p>Matched to your stage: Rise, Core, or Ascend.</p>
+    <h1>Guidance matched to your stage, not someone else's assumptions.</h1>
+    <p>Every member starts by identifying where their business actually is — Rise, Core, or Ascend — so the work that follows fits.</p>
   </div>
 </div>
-
+ 
 <!-- CURRICULUM -->
-<section class="section-dark reveal">
+<section class="section-dark reveal", style="background:var(--navy-depth);">
   <div class="wrap">
     <div class="section-head tight">
       <p class="eyebrow">The Curriculum</p>
-      <h2>Six pillars, across three stages.</h2>
+      <h2>One pillar a month. Focused, actionable work.</h2>
+      <p class="lede-short">Each pillar goes live as that month's Masterclass, deepens through a 21-day Challenge, and gets pressure-tested in Pitch + Play and that month's Diagnostic Call.</p>
     </div>
-    <div class="table-scroll">
-      <table class="curric-table">
-        <thead>
-          <tr>
-            <th>Pillar</th>
-            <th>Rise — Foundations</th>
-            <th>Core — Systems</th>
-            <th>Ascend — Legacy</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="pillar-name">01 · Mindset</td>
-            <td>Employee to operator. Runway &amp; drop-dead dates.</td>
-            <td>Operator to CEO. Managing team energy detractors.</td>
-            <td>Investor mindset. Detach for a clean exit.</td>
-          </tr>
-          <tr>
-            <td class="pillar-name">02 · Product &amp; Market Fit</td>
-            <td>MVP to prove viability. Painkillers for your ICP.</td>
-            <td>Refine the offer. Automated delivery model.</td>
-            <td>Value tied to brand, not founder.</td>
-          </tr>
-          <tr>
-            <td class="pillar-name">03 · Marketing &amp; Sales</td>
-            <td>Organic outreach. Revenue over vanity.</td>
-            <td>Automated funnels. Founder off every call.</td>
-            <td>Self-sustaining sales, zero founder input.</td>
-          </tr>
-          <tr>
-            <td class="pillar-name">04 · Operations</td>
-            <td>Document the journey. Basic CRM.</td>
-            <td>Notes into SOPs. Team owns fulfillment.</td>
-            <td>Architecture ready for a new owner.</td>
-          </tr>
-          <tr>
-            <td class="pillar-name">05 · Financial</td>
-            <td>Track every dollar. Survival numbers.</td>
-            <td>P&amp;Ls, forecasting, high margins.</td>
-            <td>EBITDA, valuation, clean books.</td>
-          </tr>
-          <tr>
-            <td class="pillar-name">06 · Compliance</td>
-            <td>LLC, EIN, client agreements.</td>
-            <td>Contracts, SOWs, IP protection.</td>
-            <td>Records impeccable for M&amp;A.</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</section>
-
-<!-- WHAT MAKES US DIFFERENT TEASER -->
-<section class="section-inky reveal">
-  <div class="wrap">
-    <div class="section-head tight">
-      <p class="eyebrow">Personalized by Design</p>
-      <h2>Guidance matched to your stage, not someone else's assumptions.</h2>
-      <p class="lede-short">Every member starts by identifying their current stage — so every session, challenge, and coaching call is built for where you actually are.</p>
-    </div>
-    <div class="mini-testi">
-      <div class="mini-testi-card">
-        <p class="quote">Rise gave me a plan when I had ten ideas and zero focus.</p>
-        <p class="attribution">Rise Member · Coach</p>
+ 
+    <div class="pillar-explorer">
+      <div class="pe-list">
+        <button class="pe-item active"
+          data-pillar-name="Professional Development" data-short="Professional Development"
+          data-rise="From employee to operator. Identifying your personal runway and drop-dead dates."
+          data-core="From operator to CEO. Managing the energy detractors of leading a team."
+          data-ascend="Adopting the investor/owner mindset. Detaching from daily operations for a clean exit.">01 · Professional Development</button>
+        <button class="pe-item"
+          data-pillar-name="Product &amp; Market Fit" data-short="Product &amp; Market Fit"
+          data-rise="Building an MVP to prove viability. Identifying painkillers for an initial ICP."
+          data-core="Refining the offer based on feedback and data. Evolving into an automated delivery model."
+          data-ascend="Institutionalizing the product so value is tied to the brand — not the founder.">02 · Product &amp; Market Fit</button>
+        <button class="pe-item"
+          data-pillar-name="Marketing &amp; Sales" data-short="Marketing &amp; Sales"
+          data-rise="Direct organic outreach and DMs. Revenue-generating activities over content vanity."
+          data-core="Automated lead generation and predictable funnels. Founder steps off every sales call."
+          data-ascend="A self-sustaining sales department with zero founder involvement.">03 · Marketing &amp; Sales</button>
+        <button class="pe-item"
+          data-pillar-name="Operations &amp; Delivery" data-short="Operations &amp; Delivery"
+          data-rise="Documenting the fast and dirty journey from pay to result. Basic CRM and schedules."
+          data-core="Turning notes into rigid SOPs. Advanced automation and a team that owns fulfillment."
+          data-ascend="Operational architecture robust enough for a new owner to step in without friction.">04 · Operations &amp; Delivery</button>
+        <button class="pe-item"
+          data-pillar-name="Financial Management" data-short="Financial Management"
+          data-rise="Tracking every dollar. Understanding survival numbers. Pricing to cover initial costs."
+          data-core="P&amp;Ls, cash flow forecasting, and optimizing for high profit margins to fund growth."
+          data-ascend="EBITDA and enterprise valuation. Clean books for due diligence and liquidity events.">05 · Financial Management</button>
+        <button class="pe-item"
+          data-pillar-name="Legal &amp; Compliance" data-short="Legal &amp; Compliance"
+          data-rise="LLC, EIN, and essential client agreements."
+          data-core="Staff contracts, SOWs, IP protection, and expanding regulatory compliance."
+          data-ascend="Corporate records and licenses impeccable for a merger, sale, or acquisition.">06 · Legal &amp; Compliance</button>
       </div>
-      <div class="mini-testi-card">
-        <p class="quote">Core is where my business stopped depending on me for everything.</p>
-        <p class="attribution">Core Member · Agency Owner</p>
-      </div>
-      <div class="mini-testi-card">
-        <p class="quote">Ascend rooms think in decades, not quarters.</p>
-        <p class="attribution">Ascend Member · Operator</p>
+      <div class="pe-panel">
+        <h3 class="pe-panel-title">Professional Development</h3>
+        <div class="pe-stages">
+          <div class="pe-stage"><span class="stage-badge rise">Rise</span><p data-pe-field="rise">From employee to operator. Identifying your personal runway and drop-dead dates.</p></div>
+          <div class="pe-stage"><span class="stage-badge core">Core</span><p data-pe-field="core">From operator to CEO. Managing the energy detractors of leading a team.</p></div>
+          <div class="pe-stage"><span class="stage-badge ascend">Ascend</span><p data-pe-field="ascend">Adopting the investor/owner mindset. Detaching from daily operations for a clean exit.</p></div>
+        </div>
+        <p class="pe-videos-label">View Past Videos</p>
+        <div class="pe-video-row">
+          <div class="media-card" data-belongs-to="pillars" data-category="p1">
+          <div class="media-thumb"><span class="media-badge">Masterclass</span><span>Session Placeholder</span></div>
+          <div class="media-body"><p class="media-eyebrow"><span class="media-category">01 · Professional Development</span></p><h4 class="media-title", style="color:white;"><span data-pe-video-label>Professional Development — Workshop Recording</span></h4><div class="media-person"><span class="avatar-dot">E</span><span class="p-name">With an Elevate Expert</span></div></div>
+        </div>
+          <div class="media-card" data-belongs-to="pillars" data-category="p1">
+          <div class="media-thumb"><span class="media-badge">Masterclass</span><span>Session Placeholder</span></div>
+          <div class="media-body"><p class="media-eyebrow"><span class="media-category">01 · Professional Development</span></p><h4 class="media-title", style="color:white;"><span data-pe-video-label>Professional Development — Workshop Recording</span></h4><div class="media-person"><span class="avatar-dot">E</span><span class="p-name">With an Elevate Expert</span></div></div>
+        </div>
+        
+        <div class="media-card" data-belongs-to="pillars" data-category="p1">
+          <div class="media-thumb"><span class="media-badge">Masterclass</span><span>Session Placeholder</span></div>
+          <div class="media-body"><p class="media-eyebrow"><span class="media-category">01 · Professional Development</span></p><h4 class="media-title", style="color:white;"><span data-pe-video-label>Professional Development — Workshop Recording</span></h4><div class="media-person"><span class="avatar-dot">E</span><span class="p-name">With an Elevate Expert</span></div></div>
+        </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
-
+ 
 <!-- PRICING -->
 <section id="pricing" class="section-mist reveal">
   <div class="wrap">
@@ -153,7 +134,7 @@
       <p class="eyebrow">Pricing</p>
       <h2>Choose the room that matches your stage.</h2>
     </div>
-
+ 
     <div class="tiers">
       <div class="tier-card" style="background:var(--inky-blue);">
         <span class="tier-num">Tier 01 · Rise</span>
@@ -170,7 +151,7 @@
         </ul>
         <a href="login.html" class="btn btn-outline">Join Rise</a>
       </div>
-
+ 
       <div class="tier-card featured" style="background:var(--inky-blue); border-color:var(--electrum);">
         <span class="tier-num">Tier 02 · Core</span>
         <h3>Core</h3>
@@ -186,7 +167,7 @@
         </ul>
         <a href="login.html" class="btn btn-gold">Join Core</a>
       </div>
-
+ 
       <div class="tier-card" style="background:var(--inky-blue);">
         <span class="tier-num">Tier 03 · Ascend</span>
         <h3>Ascend</h3>
@@ -198,12 +179,12 @@
           <li>Succession planning &amp; exits</li>
           <li>Personal wealth strategies</li>
         </ul>
-        <a href="events.html#diagnostic-calls" class="btn btn-outline">Apply for Ascend</a>
+        <a href="login.html" class="btn btn-outline">Sign Up for the Waitlist</a>
       </div>
     </div>
   </div>
 </section>
-
+ 
 <section class="cta-band reveal">
   <div class="wrap">
     <p class="eyebrow">Not sure which tier fits?</p>
@@ -214,7 +195,7 @@
     </div>
   </div>
 </section>
-
+ 
 <footer>
   <div class="wrap">
     <div class="footer-grid">
@@ -254,7 +235,8 @@
     </div>
   </div>
 </footer>
-
-<script src="js/main.js"></script>
+ 
+<script src="main.js"></script>
 </body>
 </html>
+ 
